@@ -12,16 +12,16 @@ export class MenuComponent {
   ngOnInit(){
     this.items = [
       {
-        label: 'Pipes de Angular',
+        label: 'Institución',
         icon: 'pi pi-desktop',
         items: [
           {
-            label: 'Textos y Fechas',
+            label: 'Mantenimiento',
             icon: 'pi pi-align-left',
             routerLink: '/'
           },
           {
-            label: 'Números',
+            label: 'Listados',
             icon: 'pi pi-dollar',
             routerLink: 'numeros'
           },
@@ -32,9 +32,53 @@ export class MenuComponent {
           }]
         },
       {
-        label: 'Pipes personalizados',
+        label: 'Jugador',
         icon: 'pi pi-cog',
-        routerLink: 'ordenar'
+        items: [
+          {
+            label: 'Mantenimiento',
+            icon: 'pi pi-globe',
+            routerLink: 'no-comunes'
+          },
+          {
+            label: 'Listado',
+            icon: 'pi pi-globe',
+            routerLink: 'no-comunes'
+          }
+
+        ]
+      },
+      {
+        label: 'Secretaría',
+        icon: 'pi pi-cog',
+        items:[
+          {
+            label:'Actas',
+            icon:'',
+            routerLink:'listar'
+          },
+          {
+            label:'Documentos',
+            icon:'',
+            routerLink:'listar1'
+          },
+          {
+            label:'Control documentación',
+            icon:'',
+            routerLink:'listar2'
+          }
+        ]
+      },
+      {
+        label: 'Tesorería',
+        icon: 'pi pi-cog',
+        items: [
+          {
+            label:'Movimientos',
+            icon:'',
+            routerLink: 'tMovim'
+          }
+        ]
       }
     ];
   }
