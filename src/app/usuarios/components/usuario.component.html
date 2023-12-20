@@ -1,0 +1,67 @@
+<h5>usuario works!</h5>
+<form (ngSubmit)="saveUsuario()">
+  <label for="Nombre">Nombre</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Nombre"
+    [(ngModel)]="nuevo.nombre"
+  />
+  <label for="Apellido">Apellido</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Apellido"
+    [(ngModel)]="nuevo.apellido"
+  />
+  <label for="Cedula">Cédula</label>
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Cédula"
+    [(ngModel)]="nuevo.ci"
+  />
+<label for="fnacimiento">F.Nacimiento</label>
+<input
+  type="date"
+  class="form-control"
+  placeholder="fnacimiento"
+  [(ngModel)]="nuevo.fnacimiento"
+>
+<label for="Direccion">Dirección</label>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Dirección"
+  [(ngModel)]="nuevo.direccion"
+>
+<label for="Telefono">Teléfono</label>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Teléfono"
+  [(ngModel)]="nuevo.telefono"
+>
+<label for="Email">Email</label>
+<input
+  type="email"
+  class="form-control"
+  placeholder="Email"
+  [(ngModel)]="nuevo.email"
+>
+<label for="Usuario">Usuario</label>
+<input
+  type="text"
+  class="form-control"
+  placeholder="Usuario"
+  [(ngModel)]="nuevo.usuario"
+>
+<label for="Password">Contraseña</label>
+<input
+  type="password"
+  class="form-control"
+  placeholder="Contraseña"
+  [(ngModel)]="nuevo.password"
+/>
+<button type="submit" class="form-control" >Guardar</button>
+</form>
