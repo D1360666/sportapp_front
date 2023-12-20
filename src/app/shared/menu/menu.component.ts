@@ -30,7 +30,7 @@ export class MenuComponent {
             icon: 'pi pi-globe',
             routerLink: 'no-comunes'
           }]
-        },
+      },
       {
         label: 'Jugador',
         icon: 'pi pi-cog',
@@ -79,7 +79,27 @@ export class MenuComponent {
             routerLink: 'tMovim'
           }
         ]
-      }
+      },
+      {
+        label: 'Usuarios',
+        icon: 'pi pi-desktop',
+        items: [
+          {
+            label: 'Mantenimiento',
+            icon: 'pi pi-align-left',
+            routerLink: 'usuarios'
+          },
+          {
+            label: 'Listados',
+            icon: 'pi pi-dollar',
+            routerLink: 'numeros'
+          },
+          {
+            label: 'No comunes',
+            icon: 'pi pi-globe',
+            routerLink: 'no-comunes'
+          }]
+        }
     ];
   }
 }

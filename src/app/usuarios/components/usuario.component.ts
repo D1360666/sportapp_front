@@ -1,6 +1,7 @@
 import { Component, Input } from '@angular/core';
 import { Usuario } from '../interfaces/usuario';
 import { UsuarioService } from '../services/usuario.service';
+import { CalendarModule } from 'primeng/calendar';
 
 @Component({
   selector: 'app-usuario',
