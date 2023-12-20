@@ -1,10 +1,15 @@
 <h5>Mantenimiento de usuarios</h5>
 <form (ngSubmit)="saveUsuario()">
-  <label for="Nombre">Nombre</label>
-  <input
-    type="text" pInputText
-    [(ngModel)]="nuevo.nombre"
-  />
+  <div class="flex flex-column gap-2">
+    <label for="nombre">Nombre</label>
+    <input
+      pInputText
+      id="nombre" aria-describedby="usuario-mant"
+      [(ngModel)]="nuevo.nombre"
+    />
+    <small id="usuario-mant">Enter your name </small>
+  </div>
+
   <label for="Apellido">Apellido</label>
   <input
     type="text" pInputText
@@ -29,6 +34,7 @@
 />
 <label for="Telefono">Teléfono</label>
 <input
+  class="p-inputtext-lg"
   type="text"
   pInputText
   [(ngModel)]="nuevo.telefono"
