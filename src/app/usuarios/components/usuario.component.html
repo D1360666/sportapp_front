@@ -3,66 +3,52 @@
   <label for="Nombre">Nombre</label>
   <input
     type="text" pInputText
-    class="form-control"
-    placeholder="Nombre"
     [(ngModel)]="nuevo.nombre"
   />
   <label for="Apellido">Apellido</label>
   <input
     type="text" pInputText
-    class="form-control"
-    placeholder="Apellido"
+    pInputText
     [(ngModel)]="nuevo.apellido"
   />
   <label for="Cedula">Cédula</label>
   <input
     type="text"
     pInputText
-    class="form-control"
-    placeholder="Cédula"
     [(ngModel)]="nuevo.ci"
   />
 <label for="fnacimiento">F.Nacimiento</label>
 <p-calendar
-  type="date"
-  pInputDate
-  class="form-control"
-  placeholder="fnacimiento"
   [(ngModel)]="nuevo.fnacimiento"
 ></p-calendar>
 <label for="Direccion">Dirección</label>
 <input
   type="text"
-  class="form-control"
-  placeholder="Dirección"
+  pInputText
   [(ngModel)]="nuevo.direccion"
->
+/>
 <label for="Telefono">Teléfono</label>
 <input
   type="text"
-  class="form-control"
-  placeholder="Teléfono"
+  pInputText
   [(ngModel)]="nuevo.telefono"
->
+/>
 <label for="Email">Email</label>
 <input
   type="email"
-  class="form-control"
-  placeholder="Email"
+  pInputText
   [(ngModel)]="nuevo.email"
->
+/>
 <label for="Usuario">Usuario</label>
 <input
   type="text"
-  class="form-control"
-  placeholder="Usuario"
+  pInputText
   [(ngModel)]="nuevo.usuario"
->
+/>
 <label for="Password">Contraseña</label>
 <input
   type="password"
-  class="form-control"
-  placeholder="Contraseña"
+  pInputText
   [(ngModel)]="nuevo.password"
 />
 <button type="submit" class="form-control" >Guardar</button>
